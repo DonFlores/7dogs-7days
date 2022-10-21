@@ -6,6 +6,8 @@ A website where you can take notes or keep track of your to do lists and see cut
 
 As a student I need a website to keep track of my daily assignments and look at dog pictures to keep my stress levels low.
 
+## Framework
+
 ## Built With
 
 - HTML
@@ -24,7 +26,7 @@ As a student I need a website to keep track of my daily assignments and look at 
 - when you click on each day of the week
 - then you will see a note space with a dog picture
 - when you write notes
-- then you can save it on the server side storage store
+- then you can save it on the local storage
 - then your note will be stored to persistent data
 
 ## Collaborators
