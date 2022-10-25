@@ -1,7 +1,7 @@
-function handleFetch (){
-    fetch("https://dog.ceo/api/breeds/image/random")
+function getDogByBreed (breed){
+    fetch("https://dog.ceo/api/breed/"+breed+"/images")
         .then(responce => responce.json())
         .then(data => console.log(data))
     
 }
-handleFetch()
+getDogByBreed("hound")

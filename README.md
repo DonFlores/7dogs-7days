@@ -31,4 +31,4 @@ As a student I need a website to keep track of my daily assignments and look at 
 
 ## Collaborators
 
-- [Don Flores]https://github.com/DonFlores, [Shayna Murphy]https://github.com/Shaynam1977, [Ramin Noorzada]https://github.com/RaminNoorzada, [Jingmey Sherpa]
+- ![Don Flores]https://github.com/DonFlores, ![Shayna Murphy]https://github.com/Shaynam1977, ![Ramin Noorzada]https://github.com/RaminNoorzada, ![Jingmey Sherpa]https://github.com/jsherpss
