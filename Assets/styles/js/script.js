@@ -1,5 +1,5 @@
-var buttonelement = document.getElementById("fetchJoke")
-buttonelement.addEventListener("click",getJoke)
+var buttonelement = document.getElementById("fetchJokes")
+var sundayImage = document.getElementById("Sunday-image")
  function getJoke (){
     const options = {
         method: 'GET',
@@ -17,8 +17,17 @@ buttonelement.addEventListener("click",getJoke)
 
 function handleFetch (){
     fetch("https://dog.ceo/api/breeds/image/random")
-        .then(responce => responce.json())
-        .then(data => console.log(data))
+        .then(response => response.json())
+        .then(data => displayDog(data))
     
 }
-handleFetch()
+const displayDog = function(image){
+    const dogImage = document.createElement("img")
+    dogImage.setAttribute("href","https://dog.ceo/" + image + "/random")
+    sundayImage.appendChild(dogImage)
+}
+
+buttonelement.addEventListener("click",function(){
+    getJoke()
+    handleFetch()
+    })
