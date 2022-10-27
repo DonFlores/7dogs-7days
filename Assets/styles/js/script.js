@@ -1,5 +1,6 @@
-var buttonelement = document.getElementById("fetchJokes")
-var sundayImage = document.getElementById("Sunday-image")
+var buttonelement = document.querySelector(".fetchJokes")
+var image = document.querySelector(".image")
+var joke = document.getElementById("jokeID")
  function getJoke (){
     const options = {
         method: 'GET',
@@ -11,21 +12,29 @@ var sundayImage = document.getElementById("Sunday-image")
     };
     fetch('https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random', options)
         .then(response => response.json())
-        .then(response => console.log(response))
+        .then(response => {
+            let dayJoke = document.createElement("p")
+            console.log(response)
+            let chuckJoke = response.value
+            dayJoke.textContent = chuckJoke
+            joke.appendChild(dayJoke)
+        })
         .catch(err => console.error(err));
  }
 
 function handleFetch (){
     fetch("https://dog.ceo/api/breeds/image/random")
         .then(response => response.json())
-        .then(data => displayDog(data))
+        .then(data => {
+            image.innerHTML =`<img src="${data.message}"/>`
+        })
     
 }
-const displayDog = function(image){
-    const dogImage = document.createElement("img")
-    dogImage.setAttribute("href","https://dog.ceo/" + image + "/random")
-    sundayImage.appendChild(dogImage)
-}
+// const displayDog = function(image){
+//     const dogImage = document.createElement("img")
+//     dogImage.setAttribute("href","https://dog.ceo/" + image + "/random")
+//     sundayImage.appendChild(dogImage)
+// }
 
 buttonelement.addEventListener("click",function(){
     getJoke()
