@@ -6,3 +6,13 @@
  .centered{
      margin-left: 5%
  }
+
+.week-container {
+   margin: 15px;
+   padding: 30px;
+}
+
+.day-container {
+    margin: 15px;
+    padding: 30px;
+}
