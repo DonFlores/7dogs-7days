@@ -17,6 +17,7 @@ var joke = document.getElementById("jokeID")
             console.log(response)
             let chuckJoke = response.value
             dayJoke.textContent = chuckJoke
+            joke.innerHTML=""
             joke.appendChild(dayJoke)
         })
         .catch(err => console.error(err));
@@ -26,7 +27,7 @@ function handleFetch (){
     fetch("https://dog.ceo/api/breeds/image/random")
         .then(response => response.json())
         .then(data => {
-            image.innerHTML =`<img src="${data.message}"/>`
+            image.innerHTML =`<img ="dogimg" src="${data.message}"/>`
         })
     
 }
@@ -40,3 +41,16 @@ buttonelement.addEventListener("click",function(){
     getJoke()
     handleFetch()
     })
+
+    function handleMondayClick(){
+        //fetchrequest for joke
+        //fetchrequets for image
+        //append joke to day specific joke area
+        //append image or image.innerhtml to day specific image area
+    }
+    function handleTuesdayClick(){
+        //fetchrequest for joke
+        //fetchrequets for image
+        //append joke to day specific joke area
+        //append image or image.innerhtml to day specific image area
+    }
