@@ -32,6 +32,7 @@ saveBtnEl.addEventListener("click", handleSaveNote)
             console.log(response)
             let chuckJoke = response.value
             dayJoke.textContent = chuckJoke
+            joke.innerHTML=""
             joke.appendChild(dayJoke)
         })
         .catch(err => console.error(err));
@@ -41,7 +42,7 @@ function handleFetch (){
     fetch("https://dog.ceo/api/breeds/image/random")
         .then(response => response.json())
         .then(data => {
-            image.innerHTML =`<img src="${data.message}"/>`
+            image.innerHTML =`<img ="dogimg" src="${data.message}"/>`
         })
     
 }
