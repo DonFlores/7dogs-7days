@@ -1,3 +1,5 @@
+
+
 .row-cover { overflow: hidden; }
 .row-wrap { margin: 0 -8.33333%; }
  @media only screen and (max-width: 767px) {
@@ -17,8 +19,9 @@
     padding: 30px;
 }
 
-#dogimg{
-    height: 200px;
-    width: 200px;
-    display: flex;
+
+.dog {
+    height: 200;
+    width: 200;
+    display: flex
 }

@@ -34,7 +34,7 @@ saveBtnEl.addEventListener("click", handleSaveNote)
             dayJoke.textContent = chuckJoke
             joke.innerHTML=""
             joke.appendChild(dayJoke)
-        })
+        }) 
         .catch(err => console.error(err));
  }
 
@@ -42,15 +42,12 @@ function handleFetch (){
     fetch("https://dog.ceo/api/breeds/image/random")
         .then(response => response.json())
         .then(data => {
-            image.innerHTML =`<img ="dogimg" src="${data.message}"/>`
+
+            image.innerHTML =`<img class="dogs" src="${data.message}"/>`
+
         })
     
 }
-// const displayDog = function(image){
-//     const dogImage = document.createElement("img")
-//     dogImage.setAttribute("href","https://dog.ceo/" + image + "/random")
-//     sundayImage.appendChild(dogImage)
-// }
 
 buttonelement.addEventListener("click",function(){
     getJoke()
