@@ -16,3 +16,9 @@
     margin: 15px;
     padding: 30px;
 }
+
+#dogimg{
+    height: 200px;
+    width: 200px;
+    display: flex;
+}
