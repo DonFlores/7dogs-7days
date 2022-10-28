@@ -1,6 +1,6 @@
 # 7dogs-7days
 
-A website where you can take notes or keep track of your to do lists and see cute dogs
+A website where you can take notes or keep track of your to do lists and see cute dogs and jokes.
 
 ## User Story
 
@@ -8,27 +8,31 @@ As a student I need a website to keep track of my daily assignments and look at 
 
 ## Framework
 
+-Materialize
+
 ## Built With
 
 - HTML
 - CSS
 - JavaScript
 
-## Wireframe
-
 ## API's
 
-- Dog.ceo
+- Dog.ceo API
+- Chuck Norris API
 
 ## Tasks
 
-- landing page
-- when you click on each day of the week
-- then you will see a note space with a dog picture
-- when you write notes
-- then you can save it on the local storage
-- then your note will be stored to persistent data
+- Landing page
+- When you click on each day of the week
+- Then you will see a note space with a dog picture and a joke
+- When you write notes
+- Then you can save it on the local storage
+- Then your note will be stored on a persistent data
 
 ## Collaborators
 
-- ![Don Flores]https://github.com/DonFlores, ![Shayna Murphy]https://github.com/Shaynam1977, ![Ramin Noorzada]https://github.com/RaminNoorzada, ![Jingmey Sherpa]https://github.com/jsherpss
+- [Don Flores](https://github.com/DonFlores)
+- [Shayna Murphy](https://github.com/Shaynam1977)
+- [Ramin Noorzada](https://github.com/RaminNoorzada)
+- [Jingmey Sherpa](https://github.com/jsherpss)
