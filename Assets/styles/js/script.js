@@ -1,6 +1,21 @@
 var buttonelement = document.querySelector(".fetchJokes")
 var image = document.querySelector(".image")
 var joke = document.getElementById("jokeID")
+var saveBtnEl = document.getElementById("saveBtnEl")
+var saveNoteText = document.getElementById("saveNoteText")
+
+function handleSaveNote () {
+    var noteContent = saveNoteText.value
+    localStorage.setItem("note1", noteContent)
+}
+
+function renderNotes () {
+    var notes = localStorage.getItem("note1")
+    saveNoteText.innerText = (notes)
+}
+
+saveBtnEl.addEventListener("click", handleSaveNote)
+
  function getJoke (){
     const options = {
         method: 'GET',
@@ -40,3 +55,5 @@ buttonelement.addEventListener("click",function(){
     getJoke()
     handleFetch()
     })
+
+renderNotes()
