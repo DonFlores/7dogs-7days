@@ -85,6 +85,8 @@ function renderNotes () {
     saveNoteText.innerText = (notes)
 }
 
+
+
 function renderNotesMonday () {
     var notesMonday = localStorage.getItem("noteMonday")
     saveNoteTextMonday.innerText = (notesMonday)
@@ -398,3 +400,9 @@ buttonSaturday.addEventListener("click",function(){
     })
 
 renderNotes()
+renderNotesMonday()
+renderNotesTuesday()
+renderNotesWednesday()
+renderNotesThursday()
+renderNotesFriday()
+renderNotesSaturday()
