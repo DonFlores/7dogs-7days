@@ -30,7 +30,43 @@ color:white
 }
 
 
-.dog {
+.image {
+    height: 200;
+    width: 200;
+    display: flex
+}
+
+.imageMonday {
+    height: 200;
+    width: 200;
+    display: flex
+}
+
+.imageTuesday {
+    height: 200;
+    width: 200;
+    display: flex
+}
+
+.imageWednesday {
+    height: 200;
+    width: 200;
+    display: flex
+}
+
+.imageThursday {
+    height: 200;
+    width: 200;
+    display: flex
+}
+
+.imageFriday {
+    height: 200;
+    width: 200;
+    display: flex
+}
+
+.imageSaturday {
     height: 200;
     width: 200;
     display: flex
