@@ -91,7 +91,7 @@ function renderNotesMonday () {
 }
 
 function renderNotesTuesday () {
-    var notesMonday = localStorage.getItem("noteTuesday")
+    var notesTuesday = localStorage.getItem("noteTuesday")
     saveNoteTextTuesday.innerText = (notesTuesday)
 }
 
@@ -279,7 +279,7 @@ saveBtnElSaturday.addEventListener("click", handleSaveNoteSaturday)
             let chuckJoke = response.value
             dayJoke.textContent = chuckJoke
             jokeSaturday.innerHTML=""
-            joke.appendChild(dayJoke)
+            jokeSaturday.appendChild(dayJoke)
         }) 
         .catch(err => console.error(err));
  }
@@ -372,12 +372,12 @@ buttonMonday.addEventListener("click",function(){
     })
 
 buttonTuesday.addEventListener("click",function(){
-     getJokeWednesday()
+     getJokeTuesday()
      handleFetchTuesday()
      })
 
 buttonWednesday.addEventListener("click",function(){
-    getJokeTuesday
+    getJokeWednesday()
     handleFetchWednesday()
     })
 
